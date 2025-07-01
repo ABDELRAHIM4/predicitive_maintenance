@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 # Load the dataset
-data = pd.read_csv(r"C:\Users\Abdo\Downloads\archive (3)\predictive_maintenance.csv")
+data = pd.read_csv("predictive_maintenance.csv")
 # Display the first few rows of the dataset
 data['Type'] = data['Type'].map({'L': 0, 'M': 1, 'H': 2})
 data['Failure Type'] = data['Failure Type'].map({'No Failure': 0, 'Sort descending': 1, 'Heat Dissipation Failure': 2,
